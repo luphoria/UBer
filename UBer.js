@@ -1,7 +1,7 @@
 /* 
   UBer v4.0 by luphoria.
 */
-(function() {
+javascript: (function() {
   var url = prompt("\
 Welcome to UBer v4.0\n\
 enter url, the one already there is Google. make sure to start with http://, https://, or //.\n\
@@ -10,6 +10,8 @@ OR enter 'proxy' to go to a proxy site.\n\n\n\
     placeholder = "//www.google.com/webhp?igu=1"); /* google with flag used by agoogleaday -- allows google.com for cross-origin iframe */
   if (url == "proxy") {
     /* if user inputs "proxy" instead of a url */
+    var pc = prompt("Welcome to UBer v4.0\nenter proxy choice.\n\n-luphoria", placeholder = "Alloy/Womginx")
+    if (pc == "Womginx") {
     var url2 = prompt("\
 Welcome to UBer v4.0\n\
 enter url.\
@@ -24,7 +26,23 @@ enter url.\
         url2 = null;
       };
     };
-  };
+  };} else if (pc == "Alloy") {
+    var url2 = prompt("\
+Welcome to UBer v4.0\n\
+enter url.\
+-luphoria",
+      placeholder = "https://google.com/"); /* flag not required when using proxy */
+    if (url2 != "" && null != url2); /* cancel check */ {
+      if (url2.includes("//", 0) || url2.includes("http://", 0) || url2.includes("https://", 0)) {
+        url = "https://a.ludicrous.gq/web/_" + btoa(url2) + "_/"; /* simple alloy proxy */
+      } else {
+        alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.");
+        url = null;
+        url2 = null;
+      };
+    };
+  }
+  }
   if ("" != url && null != url) {
     if (url.includes("//", 0) || url.includes("http://", 0) || url.includes("https://", 0)) {
       document.body.innerHTML = '<body style="margin:0px;padding:0px;overflow:hidden"><iframe src="' + url + '" id="uberFrame" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe></body>'

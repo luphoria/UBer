@@ -26,7 +26,7 @@ enter url.\
         url2 = null;
       };
     };
-  };} else if (pc == "Alloy") {
+  } else if (pc == "Alloy") {
     var url2 = prompt("\
 Welcome to UBer v4.0\n\
 enter url.\
@@ -34,13 +34,14 @@ enter url.\
       placeholder = "https://google.com/"); /* flag not required when using proxy */
     if (url2 != "" && null != url2); /* cancel check */ {
       if (url2.includes("//", 0) || url2.includes("http://", 0) || url2.includes("https://", 0)) {
-        url = "https://a.ludicrous.gq/web/_" + btoa(url2) + "_/"; /* simple alloy proxy */
+        url = "https://a.cattlefood.org/web/_" + btoa(url2) + "_/"; /* simple alloy proxy */
       } else {
         alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.");
         url = null;
         url2 = null;
       };
     };
+  }
   }
   if ("" != url && null != url) {
     if (url.includes("//", 0) || url.includes("http://", 0) || url.includes("https://", 0)) {

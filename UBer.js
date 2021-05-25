@@ -1,7 +1,7 @@
 /* 
   UBer v4.0 by luphoria.
 */
-javascript: (function() {
+(function() {
   var url = prompt("\
 Welcome to UBer v4.0\n\
 enter url, the one already there is Google. make sure to start with http://, https://, or //.\n\

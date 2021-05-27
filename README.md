@@ -11,7 +11,7 @@ luphoria. I have been the single developer for four years (but I am publicizing 
 UBer is a favelet, or a bookmarklet. To use it, all you have to do is:
  - host UBer.js on your own webpage (e.g. a github pages website)
  - drag this "favelet" to your Bookmarks bar: `javascript:s=document.body.appendChild(document.createElement ('script'));s.id='fs';s.language='javascript';void (s.src='//path/to/UBer.js');`
- -- Many websites using the default setting do not work. This can be resolved by visiting that website FIRST, stopping the page from fully loading, and then loading UBer. If the page STILL doesn't work, try it with the proxy.
+ - *Many websites using the default setting do not work. This can be resolved by visiting that website FIRST, stopping the page from fully loading, and then loading UBer. If the page STILL doesn't work, try it with the proxy.*
  
 ### How do I use it?
 Simply click on the favelet and it will load a menu. It should be fairly self-explanatory.
@@ -35,4 +35,4 @@ Any and all websites unblockable and functional.
 ### What doesn't work?
   - YouTube UI
   - GitHub
-  -- Any website will work via Lyft, however this is less than preferable.
+  - *Any website will work via Lyft, however this is less than preferable.*

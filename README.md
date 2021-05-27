@@ -1,6 +1,9 @@
 # UBer
 A GoGuardian unblocking tool.
 
+## NOTE!
+Lyft requires loading quickly. I do NOT recommend you host this on a server, as it is most likely to fail for taking too long to request for the JS. Instead, run the favelet completely locally: `javascript:window.addEventListener('beforeunload', function (e) {e.preventDefault();return "h";});`
+
 ### What is this?
 UBer is a tool designed to unblock websites, specifically tailored to GoGuardian.
 
@@ -25,6 +28,7 @@ By combining onbeforeunload, iframes, and adding a proxy as well, you can unbloc
 
 ## End Goal
 Any and all websites unblockable and functional.
+*Any website will work via Lyft, however its speed-spam-clicky nature makes this less than preferable.*
 
 ### What works?
  - youtube videos themselves, but not the UI. you have to watch videos by using the proxy and visiting the `/embed/` version of the videos.
@@ -35,4 +39,3 @@ Any and all websites unblockable and functional.
 ### What doesn't work?
   - YouTube UI
   - GitHub
-  - *Any website will work via Lyft, however this is less than preferable.*

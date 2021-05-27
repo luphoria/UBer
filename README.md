@@ -35,6 +35,7 @@ Any and all websites unblockable and functional.
  - Discord
  - Google
  - (Old) Reddit
+ - GitHub (no login)
  
 ### What doesn't work?
   - YouTube UI

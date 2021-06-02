@@ -1,5 +1,7 @@
 # UBer
-A GoGuardian unblocking tool.
+A favelet which can be used to unblock websites that are blocked with GoGuardian.
+Drag this to your Bookmarks bar, click on it and it will prompt you to enter a URL:
+`javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://luphoria.github.io/UBer/UBer.min.js%27%7D)()`
 
 ## NOTE!
 Lyft requires loading quickly. I do NOT recommend you host this on a server, as it is most likely to fail for taking too long to request for the JS. Instead, run the favelet completely locally: `javascript:window.addEventListener('beforeunload', function (e) {e.preventDefault();return "h";});`

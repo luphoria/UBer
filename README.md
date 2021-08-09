@@ -1,4 +1,7 @@
 # UBer
+
+**Main Link - `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://luphoria.com/UBer/UBer.min.js'})()`**
+
 A favelet which can be used to unblock websites that are blocked with GoGuardian.
 Drag this to your Bookmarks bar, click on it and it will prompt you to enter a URL:
 `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://luphoria.com/UBer/UBer.min.js%27%7D)()`

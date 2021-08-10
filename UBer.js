@@ -1,49 +1,29 @@
 /* 
-  UBer v4.0 by luphoria.
+  UBer v4.1 by luphoria.
 */
 (function() {
   var url = prompt("\
-Welcome to UBer v4.0\n\
+Welcome to UBer v4.1\n\
 enter url, the one already there is Google. make sure to start with http://, https://, or //.\n\
-OR enter 'proxy' to go to a proxy site.\n\n\n\
+OR enter 'p' to go to a proxy site.\n\n\n\
 -luphoria",
-    placeholder = "//www.google.com/webhp?igu=1") /* google with flag used by agoogleaday -- allows google.com for cross-origin iframe */
-  if (url == "proxy") {
+    placeholder = "//www.google.com/?igu=1") /* google with flag used by agoogleaday -- allows google.com for cross-origin iframe */
+  if (url == "p") {
     /* if user inputs "proxy" instead of a url */
-    var pc = prompt("Welcome to UBer v4.0\nenter proxy choice.\n\n\n-luphoria", placeholder = "Alloy/Womginx")
-    
-    if (pc.toLowerCase() == "womginx") {
-      var url2 = prompt("\
-Welcome to UBer v4.0\n\
-enter url.\
--luphoria",
-      placeholder = "https://google.com/") /* flag not required when using proxy */
-      if (url2 != "" && null != url2) /* cancel check */ {
-        if (url2.includes("//", 0) || url2.includes("http://", 0) || url2.includes("https://", 0)) {
-          url = "https://uberbread.herokuapp.com/main/" + url2 /* simple womginx proxy, with modification for no cookie requirement */
-        } else {
-          alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.")
-          url = null
-          url2 = null
-        }
-      }
-  }
-  else if (pc.toLowerCase() == "alloy") {
     var url2 = prompt("\
-Welcome to UBer v4.0\n\
+Welcome to UBer v4.1\n\
 enter url.\
 -luphoria",
       placeholder = "https://google.com/") /* flag not required when using proxy */
     if (url2 != "" && null != url2) /* cancel check */ {
       if (url2.includes("//", 0) || url2.includes("http://", 0) || url2.includes("https://", 0)) {
-        url = "https://uberalloy.herokuapp.com/web/_" + btoa(url2) + "_/" /* simple alloy proxy */
+        url = "https://uberhu.herokuapp.com/search/" + encodeURIComponent(url2.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('')) // XOR encoding -- taken from codec.js in the Corrosion source, but most likely a standard(?)
       } else {
         alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.")
         url = null
         url2 = null
       }
     }
-  }
   }
   
   if ("" != url && null != url) {

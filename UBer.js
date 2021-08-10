@@ -1,17 +1,17 @@
 /* 
-  UBer v4.1 by luphoria.
+  UBer v4.11 by luphoria.
 */
-(function() {
+/* javascript: */(function() {
   var url = prompt("\
-Welcome to UBer v4.1\n\
+Welcome to UBer v4.11\n\
 enter url, the one already there is Google. make sure to start with http://, https://, or //.\n\
 OR enter 'p' to go to a proxy site.\n\n\n\
 -luphoria",
     placeholder = "//www.google.com/?igu=1") /* google with flag used by agoogleaday -- allows google.com for cross-origin iframe */
   if (url == "p") {
-    /* if user inputs "proxy" instead of a url */
+    /* if user inputs "p" instead of a url */
     var url2 = prompt("\
-Welcome to UBer v4.1\n\
+Welcome to UBer v4.11\n\
 enter url.\
 -luphoria",
       placeholder = "https://google.com/") /* flag not required when using proxy */

@@ -45,3 +45,7 @@ Any and all websites unblockable and functional.
 ### What doesn't work?
   - YouTube UI
   - GitHub
+
+## CREDITS
+  - Code: luphoria
+  - "Corrosion" web proxy: @Carcal-js

@@ -56,10 +56,7 @@ const proxy = "http://uberhu.herokuapp.com/search/" // corrosion -- i also manip
                     this.selectors = domContent,
                     this.selectors.forEach((function(e) {
                         [].forEach.call(document.querySelectorAll(e), (function() {
-                            document.getElementById("win").addEventListener("click", (function(e) {
-                                return params.window()
-                            }
-                            ), false)
+                            return params.window()
                         }
                         ))
                     }

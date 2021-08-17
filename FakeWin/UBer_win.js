@@ -1,11 +1,13 @@
+import "./jquery.js"
+import "./jquery-ui.js"
 import "./fake_window_proxy.js"
-(function() {
-let clicked = 0
-let windowUrl = prompt("enter URL: \n   -luphoria")
-let domain = windowUrl.split("/")[2]
-let domain_params
+
+export let clicked = 0
+export let windowUrl = prompt("enter URL: \n   -luphoria")
+console.log(windowUrl)
+export let domain = windowUrl.split("/")[2]
+export let domain_params = ""
 if (windowUrl.split("/")[3] != undefined) domain_params = "/" + windowUrl.split("/")[3]
-let win = new FakeWindow()
-win.bind(['a', 'button'])
-win.init()
-})()
+export let win = new FakeWindow()
+win.initWindow(windowUrl)
+win.window()

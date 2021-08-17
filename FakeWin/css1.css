@@ -1,0 +1,362 @@
+@media only screen and (prefers-color-scheme: dark) {
+
+    iframe {
+        background-color: #35363a;
+    }
+
+    .window-body-addressbar {
+        border: 0px ridge #cccccc !important;
+        background-color: #202124 !important;
+        transition: 0.15s;
+    }
+
+    .window-body-addressbar:hover {
+        background-color: #292a2d !important;
+    }
+
+    .addressbar-secure {
+        color: #c7c7c7 !important;
+    }
+
+    #new-window {
+        background-color: #202124 !important;
+        color: #a6aaa3 !important;
+    }
+
+    .addressbar-address {
+        color: #909192 !important;
+    }
+
+    i.flaticon--custom-1:hover {
+        color: white !important;
+    }
+
+    i.flaticon--custom-1.flaticon-multi-tab:hover {
+        background-color: #373b3e !important;
+    }
+
+    i.flaticon--custom-1.flaticon-minus-symbol:hover {
+        background-color: #373b3e !important;
+    }
+
+    .addressbar-secure:hover {
+        background-color: #373b3e !important;
+    }
+
+    .window-header {
+        border-top: #1883d7 1px solid;
+        border-bottom: #252628 1px solid;
+        color: #fff !important;
+    }
+
+    .window-body-data-1 {
+        border-top: #252628 1px solid;
+    }
+
+    .domain-name {
+        color: #fff !important;
+    }
+}
+
+@media only screen and (prefers-color-scheme: light) {
+
+    iframe {
+        background-color: #ffffff;
+    }
+
+    .window-body-addressbar {
+        border: 0px ridge #cccccc !important;
+        background-color: #f1f3f4 !important;
+        transition: 0.15s;
+    }
+
+    .window-body-addressbar:hover {
+        background-color: #e9ebec !important;
+    }
+
+    .window-header {
+        background-color: #dee1e6 !important;
+    }
+
+    .addressbar-secure {
+        /*background-color: #e9ebec !important;*/
+        color: #797979;
+    }
+
+    #new-window {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    .addressbar-address {
+        color: #7d7d7d !important;
+        /*background-color: #e9ebec !important;*/
+    }
+
+    i.flaticon--custom-1.flaticon-multi-tab:hover {
+        background-color: #cbcbcb !important;
+        color: black;
+    }
+
+    i.flaticon--custom-1.flaticon-minus-symbol:hover {
+        background-color: #cbcbcb !important;
+        color: black !important;
+    }
+
+    i.flaticon--custom-1.flaticon-cancel:hover {
+        color: black !important;
+    }
+
+    .addressbar-secure:hover {
+        background-color: #dfdfdf !important;
+    }
+
+    .window-header {
+        border-bottom: #b2b2b2 1px solid;
+    }
+
+    .window-body-data-1 {
+        border-top: #b2b2b2 1px solid;
+    }
+
+    .domain-name {
+        color: #444444 !important;
+    }
+
+
+}
+
+#new-window {
+    position: fixed;
+    border: 1px solid #3e3e3e;
+    display: none;
+    z-index: 1000000;
+    bottom: 0;
+    font-size: 14px;
+    font-family: "Proxima Nova Regular", Helvetica, sans-serif;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    color: #333333;
+}
+
+.ui-draggable-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.window-header {
+    padding: 0 5px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.window-header-logo {
+    width: 16px;
+    height: 16px;
+    margin: 3px 2px 0 0;
+}
+
+.window-header div {
+    cursor: context-menu;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.window-header-actions {
+    float: right;
+    margin: 0 -6px 0 0;
+    font-size: 10px;
+}
+
+.flaticon--custom-1:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.window-body {
+    height: calc(100% - 30px);
+}
+
+i.flaticon--custom-1 {
+    padding: 18px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    font-size: 9px;
+    transition: 0.15s;
+}
+
+.flaticon--custom-1.flaticon-multi-tab {
+    padding-top: 8px;
+    font-size: 10px;
+}
+
+i.flaticon--custom-1.flaticon-cancel:hover {
+    background-color: red;
+}
+
+.window-body-addressbar {
+    line-height: 26px;
+    box-sizing: border-box;
+}
+
+.addressbar-secure {
+    height: 26px;
+    margin-top: 1px;
+    width: 34px;
+    float: left;
+    padding: 0 11px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: 0.4s !important;
+}
+
+.addressbar-secure:hover {
+    border-radius: 20px;
+    cursor: pointer !important;
+
+}
+
+.addressbar-secure:hover::after {
+    width: 0px;
+}
+
+.addressbar-secure-label {
+    margin: 0 0 0 6px;
+}
+
+.addressbar-address {
+    font-size: 10.8pt;
+    white-space: nowrap;
+    padding: 0 4px;
+    overflow: hidden;
+    width: calc(100% - 54px);
+    text-overflow: ellipsis;
+    line-height: inherit;
+    border: 0;
+    border: 0px solid #ddd;
+    padding: 0px;
+    max-width: 100%;
+}
+
+i.flaticon--custom-2.flaticon-lock {
+    font-size: 11px;
+}
+
+.window-body-data-1 {
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 1px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: calc(100% - 25px);
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+input, input:active, input:focus {
+    outline: 0 !important;
+}
+
+
+.window-loaded {
+    background: url(https://luphoria.com/favicon.ico) center center/16px 16px no-repeat;
+}
+
+@media (min-width: 800px) {
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+
+@media (min-width: 425px) {
+    iframe {
+        width: 405px;
+        height: 227px;
+    }
+}
+
+@media (min-width: 375px) {
+    iframe {
+        width: 355px;
+        height: 198px;
+    }
+}
+
+@media (min-width: 320px) {
+    iframe {
+        width: 290px;
+        height: 162px;
+    }
+}
+
+/*
+ *
+ *			Flaticon
+ *
+ */
+
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: inherit;
+    font-style: normal;
+}
+
+/*
+.ui-resizable-handle {
+    width: 2px;
+	left: 0px;
+	right: 0px;
+	top: 0;
+
+	background-color: #09bbff;
+}
+*/
+
+.flaticon-lock:before {
+    content: "\f103";
+}
+
+.flaticon-minus-symbol:before {
+    content: "\f101";
+}
+
+.flaticon-multi-tab:before {
+    content: "\f102";
+}
+
+.flaticon-cancel:before {
+    content: "\f100";
+}
+
+.addressbar-secure:before {
+    content: "";
+    opacity: 1;
+    display: inline-block;
+    vertical-align: top;
+    width: 11px;
+    height: 11px;
+    margin: 6px 2px 0 3px;
+}

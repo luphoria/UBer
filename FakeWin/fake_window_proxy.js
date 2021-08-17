@@ -1,3 +1,4 @@
+import {clicked, windowUrl, domain, domain_params} from "./UBer_win.js"
 const proxy = "http://uberhu.herokuapp.com/search/" // corrosion -- i also manipulate windowUrl with XOR encoding, so you'll have to disable those.
 !function(url) {
     var arr = {};
@@ -67,13 +68,6 @@ const proxy = "http://uberhu.herokuapp.com/search/" // corrosion -- i also manip
                     ))
                 }
             }, {
-                key: "importBundle",
-                value: function() {
-                    this._importScript("./jquery-ui.js"),
-                    this._importScript("./jquery.js"),
-                    this._importScript("./bowser.js")
-                }
-            }, {
                 key: "_importScript",
                 value: function(src) {
                     var script = document.createElement("script");
@@ -86,7 +80,6 @@ const proxy = "http://uberhu.herokuapp.com/search/" // corrosion -- i also manip
                 value: function() {
                     var initializing = this;
                     document.addEventListener("DOMContentLoaded", (function() {
-                        initializing.importBundle(),
                         initializing.initWindow()
                     }
                     ))
@@ -100,21 +93,11 @@ const proxy = "http://uberhu.herokuapp.com/search/" // corrosion -- i also manip
                     this.windowNode = document.getElementById("new-window")
                 }
             }, {
-                key: "isMobile",
-                value: function() {
-                    try {
-                        return /Macintosh|Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|steam|Steam|overlay|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)
-                    } catch (err) {
-                        return console.log(err),
-                        false
-                    }
-                }
-            }, {
                 key: "window",
                 value: function() {
                     $(".window-site-name").html("Untitled")
                     var browser = "", width = 1050, height = 650;
-                    "Chrome" !== bowser.name || this.isMobile() ? this.aboutBlank(mgr) : (browser = "Google Chrome",
+                    (browser = "Google Chrome",
                     $("#browser-name").text(browser),
                     $("#new-window").css({
                         width: width,

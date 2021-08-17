@@ -1,5 +1,6 @@
 import "./fake_window_proxy.js"
 (function() {
+let clicked = 0
 let windowUrl = prompt("enter URL: \n   -luphoria")
 let domain = windowUrl.split("/")[2]
 let domain_params

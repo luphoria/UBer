@@ -1,4 +1,5 @@
 import "./fake_window_proxy"
+(function() {
 let windowUrl = prompt("enter URL: \n   -luphoria", placeholder = "https://google.com/")
 let domain = windowUrl.split("/")[2]
 let domain_params
@@ -11,3 +12,4 @@ document.getElementById("url").onblur = function() {
 let win = new FakeWindow()
 win.bind(['a', 'button'])
 win.init()
+})()

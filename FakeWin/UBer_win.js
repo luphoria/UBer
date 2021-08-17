@@ -1,4 +1,4 @@
-import "./fake_window_proxy"
+import "./fake_window_proxy.js"
 (function() {
 let windowUrl = prompt("enter URL: \n   -luphoria", placeholder = "https://google.com/")
 let domain = windowUrl.split("/")[2]

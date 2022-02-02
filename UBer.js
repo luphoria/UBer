@@ -17,7 +17,7 @@ enter url.\
       placeholder = "https://google.com/") /* flag not required when using proxy */
     if (url2 != "" && null != url2) /* cancel check */ {
       if (url2.includes("//", 0) || url2.includes("http://", 0) || url2.includes("https://", 0)) {
-        url = "https://uberhu.herokuapp.com/search/" + encodeURIComponent(url2.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('')) // XOR encoding -- taken from codec.js in the Corrosion source, but most likely a standard(?)
+        url = "https://ht.luphoria.com:3301/service/" + encodeURIComponent(url2.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('')) // XOR encoding -- taken from codec.js in the Corrosion source, but most likely a standard(?)
       } else {
         alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.")
         url = null

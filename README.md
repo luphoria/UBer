@@ -2,6 +2,10 @@
 
 **Main Link - `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://luphoria.com/UBer/UBer.min.js'})()`**
 
+Contact - *[hi@luphoria.com](mailto:hi@luphoria.com)* | *[@luphoria:matrix.org](https://matrix.to/#/@luphoria:matrix.org)* | *luphoria#1077*
+
+**Join [TitaniumNetwork](https://discord.gg/unblock)!**
+
 A favelet which can be used to unblock websites that are blocked with GoGuardian.
 Drag this to your Bookmarks bar, click on it and it will prompt you to enter a URL:
 `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://luphoria.com/UBer/UBer.min.js%27%7D)()`
@@ -23,7 +27,7 @@ UBer is a favelet, or a bookmarklet. To use it, all you have to do is:
  
 ### How do I use it?
 Simply click on the favelet and it will load a menu. It should be fairly self-explanatory.
- - The proxy used is called "Womginx" by binary-person. Slight modifications have been made so that it can be run within UBer. It is planned to have more proxies in the future.
+ - The proxy used is called "Corrosion" by sexyduceduce. Slight modifications have been made so that it can be run within UBer. It is planned to have more proxies in the future.
 
 ### So, how TF does it work??
 GoGuardian blocks pages by checking your URL, and if the URL is blocked, redirecting your page. This works fine, however there are two major flaws with this system:
@@ -31,21 +35,12 @@ GoGuardian blocks pages by checking your URL, and if the URL is blocked, redirec
  - This does **not** account for elements like `iframe`, in which a page is embedded within a totally separate page -- with a **different URL**.
 By combining onbeforeunload, iframes, and adding a proxy as well, you can unblock essentially any website,
 
+### What's the "FakeWin" stuff?
+Ignore for now -- heavy in testing stuff. But feel free to check out what it's based on -- [luphoria/FakeWindow](https://github.com/luphoria/FakeWindow)
+
 ## End Goal
 Any and all websites unblockable and functional.
 *Any website will work via Lyft, however its speed-spam-clicky nature makes this less than preferable.*
-
-### What works?
- - youtube videos themselves, but not the UI. you have to watch videos by using the proxy and visiting the `/embed/` version of the videos.
- - Discord
- - Google
- - (Old) Reddit
- - GitHub (no login)
- 
-### What doesn't work?
-  - YouTube UI
-  - GitHub
-
 ## CREDITS
   - Code: luphoria
   - "Corrosion" web proxy: @Carcal-js

@@ -1,8 +1,11 @@
 # UBer
 
+## Warning
+this code is very old, and it isn't optimal for bypassing filters anymore. I strongly, strongly recommend you use [TitaniumNetwork](https://discord.gg/unblock)
+
 **Main Link - `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://luphoria.com/UBer/UBer.min.js'})()`**
 
-Contact - *[hi@luphoria.com](mailto:hi@luphoria.com)* | *[@luphoria:matrix.org](https://matrix.to/#/@luphoria:matrix.org)* | *luphoria#1077*
+Contact - *[hi@luphoria.com](mailto:hi@luphoria.com)* | *[@trent:gra.im](https://matrix.to/#/@trent:gra.im)* | *luphoria#1313*
 
 **Join [TitaniumNetwork](https://discord.gg/unblock)!**
 

@@ -5,7 +5,7 @@
   var url = prompt("\
 Welcome to UBer v4.11\n\
 enter url, the one already there is Google. make sure to start with http://, https://, or //.\n\
-OR enter 'p' to go to a proxy site.\n\n\n\
+OR enter 'p' to automatically proxy a site.\n\n\n\
 -luphoria",
     placeholder = "//www.google.com/?igu=1") /* google with flag used by agoogleaday -- allows google.com for cross-origin iframe */
   if (url == "p") {
@@ -17,7 +17,8 @@ enter url.\
       placeholder = "https://google.com/") /* flag not required when using proxy */
     if (url2 != "" && null != url2) /* cancel check */ {
       if (url2.includes("//", 0) || url2.includes("http://", 0) || url2.includes("https://", 0)) {
-        url = "https://ht.luphoria.com:3301/service/" + encodeURIComponent(url2.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('')) // XOR encoding -- taken from codec.js in the Corrosion source, but most likely a standard(?)
+        // TODO: this needs to be a placeholder proxy. This is very old and uses Corrosion XOR. Probably consistent with UV. 
+        url = prompt("Proxy URL (xyz.abc/service/)") + encodeURIComponent(url2.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('')) // XOR encoding -- taken from codec.js in the Corrosion source, but most likely a standard(?)
       } else {
         alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.")
         url = null
